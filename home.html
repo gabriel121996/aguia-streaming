@@ -3,30 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Downloads</title>
-    <style>
-        
-        body { font-family: sans-serif; margin: 40px; line-height: 1.6; 
-        background-color: #0056b3;}
-        .download-box { border: 1px solid #ddd; padding: 20px; border-radius: 8px; display: inline-block; }
-        .btn-download { background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        .btn-download:hover { background-color: #0056b3; }
-    </style>
+    <title>Águia Play | O Império do Entretenimento</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-
 <body>
 
-    <h1>Área de tutorial</h1>
-    <p>Clique no botão abaixo para baixar o arquivo de teste:</p>
+    <a href="https://wa.me/5511943573399" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Suporte Online</span>
+    </a>
 
-    <div class="download-box">
-        
-        <h3>Unitv papa celular</h3>
-        <a href="unitv-celular.apk" download="unitv-celular" class="btn-download">
-            Baixar Arquivo
-        </a>
-    </div>
+    <header id="navbar">
+        <div class="logo"> ÁGUIA<span>PLAY</span></div>
+        <nav>
+            <a href="#sobre">Vantagens</a>
+            <a href="#conteudo">Conteúdo</a>
+            <a href="#planos">Planos</a>
+            <a href="https://wa.me/5511943573399" class="cta-nav">ATIVAR AGORA</a>
+        </nav>
+    </header>
 
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <span class="reveal">Sua liberdade chegou</span>
+            <h1 class="reveal">Todo o entretenimento que você ama em um só lugar.</h1>
+            <p class="reveal">Filmes, Séries, Esportes ao Vivo e Canais Premium. Sem travamentos e sem pagar fortunas.</p>
+            <div class="hero-btns reveal">
+                <a href="#planos" class="btn-gold">QUERO ASSINAR AGORA</a>
+                <a href="#conteudo" class="btn-outline">VER CONTEÚDO</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>🚀 Por que escolher a Águia Play?</h2>
+                <p>A melhor tecnologia de transmissão do mercado</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="f-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Ativação Imediata</h3>
+                    <p>Assinou, assistiu. Sem burocracia ou espera.</p>
+                </div>
+                <div class="f-card">
+                    <i class="fas fa-tv"></i>
+                    <h3>Multi-Dispositivos</h3>
+                    <p>Smart TV, TV Box, Celular, Tablet e PC.</p>
+                </div>
+                <div class="f-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Suporte Humano</h3>
+                    <p>Atendimento rápido via WhatsApp sempre que precisar.</p>
+                </div>
+                <div class="f-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Economia Real</h3>
+                    <p>Mais barato que a soma de todos os streamings juntos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conteudo" class="showcase">
+        <div class="container">
+            <div class="content-block reveal-left">
+                <div class="text">
+                    <h2>⚽ Esportes ao Vivo</h2>
+                    <p>Viva cada lance como se estivesse no estádio. Campeonatos nacionais e internacionais, lutas e muito mais.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Futebol, Basquete e Tênis</li>
+                        <li><i class="fas fa-check-circle"></i> Transmissão Estável 4K/HD</li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80" alt="Esportes">
+                </div>
+            </div>
+
+            <div class="content-block reverse reveal-right">
+                <div class="text">
+                    <h2>🎬 Filmes e Séries</h2>
+                    <p>Os maiores lançamentos do cinema e as séries mais premiadas atualizadas diariamente para você maratonar.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Conteúdo para toda a família</li>
+                        <li><i class="fas fa-check-circle"></i> Diversos gêneros e novidades</li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=600&q=80" alt="Filmes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planos" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>💰 Escolha seu Plano</h2>
+                <p>Entretenimento completo por um valor que cabe no seu bolso</p>
+            </div>
+
+            <div class="price-tables">
+                <div class="price-card">
+                    <h3>PLANO MENSAL</h3>
+                    <div class="price">R$ 35<span>,00</span></div>
+                    <ul class="plan-list">
+                        <li>Acesso total liberado</li>
+                        <li>Canais, Filmes e Séries</li>
+                        <li>Sem fidelidade</li>
+                    </ul>
+                    <a href="https://wa.me/5511943573399?text=Quero o plano Mensal" class="btn-card">ASSINAR AGORA</a>
+                </div>
+
+                <div class="price-card popular">
+                    <div class="ribbon">MELHOR ESCOLHA</div>
+                    <h3>PLANO ANUAL</h3>
+                    <div class="price">R$ 300<span>,00</span></div>
+                    <p class="save">Economize R$ 120,00 por ano</p>
+                    <ul class="plan-list">
+                        <li><strong>12 Meses de Acesso</strong></li>
+                        <li>Qualidade Full HD / 4K</li>
+                        <li>Suporte VIP Prioritário</li>
+                    </ul>
+                    <a href="https://wa.me/5511943573399?text=Quero o plano Anual com desconto" class="btn-card gold">QUERO O DESCONTO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>🦅 Águia Play - Liberdade, economia e entretenimento sem limites.</p>
+            <div class="socials">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

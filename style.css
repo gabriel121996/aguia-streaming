@@ -158,3 +158,51 @@ footer { padding: 60px 5%; text-align: center; border-top: 1px solid #111; color
     .btn-outline { margin-left: 0; }
     .content-block { flex-direction: column !important; text-align: center; }
 }
+
+/* Estilo do botão hamburguer (escondido no PC) */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--gold);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra o botão no celular */
+        z-index: 1001;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Esconde o menu para a direita */
+        width: 70%;
+        height: 100vh;
+        background: rgba(5, 5, 5, 0.98);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.4s;
+        box-shadow: -10px 0 20px rgba(0,0,0,0.5);
+    }
+
+    /* Quando o menu estiver ativo */
+    nav.active {
+        right: 0;
+    }
+
+    nav a {
+        margin: 20px 0 !important;
+        font-size: 18px !important;
+        width: 80%;
+        text-align: center;
+    }
+
+    .cta-nav {
+        background: var(--gold);
+        width: 80%;
+    }
+}

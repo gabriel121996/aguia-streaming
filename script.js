@@ -40,3 +40,26 @@ document.querySelectorAll('.reveal').forEach((el, index) => {
         el.style.transform = "translateY(0)";
     }, 100);
 });
+
+const mobileMenu = document.getElementById('mobile-menu');
+const navMenu = document.getElementById('nav-menu');
+const navLinks = document.querySelectorAll('nav a');
+
+// Abre/Fecha menu ao clicar no hamburguer
+mobileMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    // Muda o ícone de barras para um "X"
+    const icon = mobileMenu.querySelector('i');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-times');
+});
+
+// Fecha o menu ao clicar em qualquer link (para navegar na mesma página)
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        const icon = mobileMenu.querySelector('i');
+        icon.classList.add('fa-bars');
+        icon.classList.remove('fa-times');
+    });
+});

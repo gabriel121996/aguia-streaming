@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Download automático</title>
 </head>
 <body>
-    <a href="unitv-tv.apk"></a>
+
+<script>
+    window.onload = function () {
+        const link = document.createElement("a");
+        link.href = "app.apk"; // nome ou caminho do arquivo
+        link.download = "meu_app.apk"; // nome final do download
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+</script>
+
+<p>Seu download vai começar automaticamente...</p>
+
 </body>
 </html>
